@@ -1,0 +1,9 @@
+# GitHub Pages build artifact (created by the deploy workflow)
+_site/
+
+# Dependencies (none today, but just in case)
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+*.swp

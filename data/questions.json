@@ -1,0 +1,662 @@
+[
+  {
+    "id": "pday",
+    "prompt": "Your district has one free P-day. What are you doing?",
+    "answers": [
+      {
+        "label": "Trying every street food stand within walking distance",
+        "scores": {
+          "food": 3,
+          "cultureShift": 2,
+          "urban": 1
+        }
+      },
+      {
+        "label": "Hiking somewhere with spotty cell service",
+        "scores": {
+          "adventure": 3,
+          "rural": 2,
+          "uncertainty": 1
+        }
+      },
+      {
+        "label": "A museum, a bakery, and an extremely efficient train ride",
+        "scores": {
+          "urban": 2,
+          "cultureShift": 1,
+          "pace": 1
+        }
+      },
+      {
+        "label": "Laundry, letters, and being asleep before 9:30",
+        "scores": {
+          "pace": -2,
+          "uncertainty": -1,
+          "rural": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Ton district a un P-day libre. Que fais-tu ?",
+        "answers": [
+          "Essayer tous les stands de street food à distance de marche",
+          "Faire une randonnée quelque part avec peu de réseau",
+          "Un musée, une boulangerie et un trajet en train très efficace",
+          "Lessive, lettres et au lit avant 21 h 30"
+        ]
+      },
+      "es": {
+        "prompt": "Tu distrito tiene un P-day libre. ¿Qué haces?",
+        "answers": [
+          "Probar cada puesto de comida callejera que quede cerca",
+          "Hacer una caminata donde casi no haya señal",
+          "Un museo, una panadería y un viaje en tren muy eficiente",
+          "Lavar ropa, escribir cartas y dormir antes de las 9:30"
+        ]
+      },
+      "pt": {
+        "prompt": "Seu distrito tem um P-day livre. O que você faz?",
+        "answers": [
+          "Experimentar todas as barracas de comida de rua por perto",
+          "Fazer uma trilha em algum lugar com pouco sinal",
+          "Um museu, uma padaria e uma viagem de trem muito eficiente",
+          "Lavar roupa, escrever cartas e dormir antes das 21h30"
+        ]
+      }
+    }
+  },
+  {
+    "id": "weather",
+    "prompt": "Pick your ideal tracting weather.",
+    "answers": [
+      {
+        "label": "Hot enough that the sidewalk is personally testing me",
+        "scores": {
+          "climateWarm": 4,
+          "adventure": 1
+        }
+      },
+      {
+        "label": "Cold enough that my coat becomes part of my identity",
+        "scores": {
+          "climateCold": 4,
+          "uncertainty": 1
+        }
+      },
+      {
+        "label": "Rainy, green, and dramatic",
+        "scores": {
+          "climateWarm": 1,
+          "cultureShift": 1,
+          "rural": 1
+        }
+      },
+      {
+        "label": "Mild. I came here to serve, not to become weatherproof",
+        "scores": {
+          "climateWarm": -1,
+          "climateCold": -1,
+          "uncertainty": -1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Choisis ta météo idéale pour faire du contact.",
+        "answers": [
+          "Assez chaud pour que le trottoir me mette personnellement à l'épreuve",
+          "Assez froid pour que mon manteau devienne mon identité",
+          "Pluvieux, vert et dramatique",
+          "Doux. Je suis venu servir, pas devenir imperméable à la météo"
+        ]
+      },
+      "es": {
+        "prompt": "Elige tu clima ideal para tocar puertas.",
+        "answers": [
+          "Tan caluroso que la acera me pone a prueba personalmente",
+          "Tan frío que mi abrigo se vuelve parte de mi identidad",
+          "Lluvioso, verde y dramático",
+          "Templado. Vine a servir, no a volverme resistente al clima"
+        ]
+      },
+      "pt": {
+        "prompt": "Escolha o clima ideal para bater portas.",
+        "answers": [
+          "Quente o bastante para a calçada me testar pessoalmente",
+          "Frio o bastante para meu casaco virar parte da minha identidade",
+          "Chuvoso, verde e dramático",
+          "Ameno. Vim para servir, não para virar à prova de clima"
+        ]
+      }
+    }
+  },
+  {
+    "id": "language",
+    "prompt": "A language-learning app sends you a reminder. You feel:",
+    "answers": [
+      {
+        "label": "Thrilled. Give me cases, tones, scripts, all of it",
+        "scores": {
+          "language": 4,
+          "cultureShift": 2,
+          "uncertainty": 1
+        }
+      },
+      {
+        "label": "Ready for Spanish or Portuguese, but please be normal about it",
+        "scores": {
+          "language": 2,
+          "climateWarm": 1,
+          "food": 1
+        }
+      },
+      {
+        "label": "I will learn what I must, but I am emotionally monolingual",
+        "scores": {
+          "language": -2,
+          "uncertainty": -1
+        }
+      },
+      {
+        "label": "I mostly want a great accent story for later",
+        "scores": {
+          "language": 1,
+          "cultureShift": 1,
+          "pace": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Une appli de langue t'envoie un rappel. Tu te sens :",
+        "answers": [
+          "Ravi. Donnez-moi les cas, les tons, les alphabets, tout",
+          "Prêt pour l'espagnol ou le portugais, mais restons raisonnables",
+          "J'apprendrai ce qu'il faut, mais émotionnellement je suis monolingue",
+          "Je veux surtout une bonne histoire d'accent pour plus tard"
+        ]
+      },
+      "es": {
+        "prompt": "Una app de idiomas te manda un recordatorio. Te sientes:",
+        "answers": [
+          "Encantado. Denme casos, tonos, alfabetos, todo",
+          "Listo para español o portugués, pero con calma",
+          "Aprenderé lo necesario, pero emocionalmente soy monolingüe",
+          "Sobre todo quiero una buena historia de acento para después"
+        ]
+      },
+      "pt": {
+        "prompt": "Um app de idiomas envia um lembrete. Você se sente:",
+        "answers": [
+          "Animado. Quero casos, tons, alfabetos, tudo",
+          "Pronto para espanhol ou português, mas com calma",
+          "Vou aprender o necessário, mas emocionalmente sou monolíngue",
+          "Eu só quero uma boa história de sotaque para depois"
+        ]
+      }
+    }
+  },
+  {
+    "id": "meal",
+    "prompt": "A member family asks what you want for dinner.",
+    "answers": [
+      {
+        "label": "Whatever is most local, even if I cannot identify it yet",
+        "scores": {
+          "food": 4,
+          "cultureShift": 2,
+          "uncertainty": 2
+        }
+      },
+      {
+        "label": "Something spicy enough to become a testimony builder",
+        "scores": {
+          "food": 3,
+          "climateWarm": 1,
+          "adventure": 1
+        }
+      },
+      {
+        "label": "A casserole with a familiar name",
+        "scores": {
+          "food": -1,
+          "cultureShift": -1,
+          "uncertainty": -2
+        }
+      },
+      {
+        "label": "I brought snacks and I trust no schedule",
+        "scores": {
+          "uncertainty": 1,
+          "pace": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Une famille membre te demande ce que tu veux pour dîner.",
+        "answers": [
+          "Ce qu'il y a de plus local, même si je ne peux pas encore l'identifier",
+          "Quelque chose d'assez épicé pour fortifier mon témoignage",
+          "Un gratin avec un nom familier",
+          "J'ai apporté des snacks et je ne fais confiance à aucun horaire"
+        ]
+      },
+      "es": {
+        "prompt": "Una familia miembro pregunta qué quieres cenar.",
+        "answers": [
+          "Lo más local, aunque todavía no pueda identificarlo",
+          "Algo suficientemente picante para fortalecer mi testimonio",
+          "Una cazuela con un nombre familiar",
+          "Traje bocadillos y no confío en ningún horario"
+        ]
+      },
+      "pt": {
+        "prompt": "Uma família membro pergunta o que você quer jantar.",
+        "answers": [
+          "O que for mais local, mesmo que eu ainda não saiba identificar",
+          "Algo picante o bastante para fortalecer meu testemunho",
+          "Uma caçarola com um nome familiar",
+          "Trouxe lanches e não confio em nenhum horário"
+        ]
+      }
+    }
+  },
+  {
+    "id": "area",
+    "prompt": "Which area description makes you weirdly excited?",
+    "answers": [
+      {
+        "label": "Skyscrapers, buses, apartments, and ten doorbells per minute",
+        "scores": {
+          "urban": 4,
+          "pace": 3
+        }
+      },
+      {
+        "label": "Long drives, tiny branches, and horizons for days",
+        "scores": {
+          "rural": 4,
+          "pace": -1,
+          "adventure": 1
+        }
+      },
+      {
+        "label": "Suburbs where every cul-de-sac has lore",
+        "scores": {
+          "urban": 1,
+          "rural": 1,
+          "uncertainty": -1
+        }
+      },
+      {
+        "label": "Islands, borders, or places people need help finding on a map",
+        "scores": {
+          "cultureShift": 3,
+          "adventure": 2,
+          "uncertainty": 2
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Quelle description de secteur te rend étrangement enthousiaste ?",
+        "answers": [
+          "Gratte-ciel, bus, appartements et dix sonnettes par minute",
+          "Longs trajets, petites branches et horizons à perte de vue",
+          "Banlieues où chaque impasse a sa légende",
+          "Îles, frontières ou lieux que les gens doivent chercher sur une carte"
+        ]
+      },
+      "es": {
+        "prompt": "¿Qué descripción de área te emociona de forma extraña?",
+        "answers": [
+          "Rascacielos, autobuses, apartamentos y diez timbres por minuto",
+          "Viajes largos, ramas pequeñas y horizontes por todas partes",
+          "Suburbios donde cada calle sin salida tiene historia",
+          "Islas, fronteras o lugares que la gente tiene que buscar en un mapa"
+        ]
+      },
+      "pt": {
+        "prompt": "Qual descrição de área te deixa estranhamente animado?",
+        "answers": [
+          "Arranha-céus, ônibus, apartamentos e dez campainhas por minuto",
+          "Viagens longas, ramos pequenos e horizontes sem fim",
+          "Subúrbios onde cada rua sem saída tem história",
+          "Ilhas, fronteiras ou lugares que as pessoas precisam procurar no mapa"
+        ]
+      }
+    }
+  },
+  {
+    "id": "companion",
+    "prompt": "Your companion says the plan changed completely. You say:",
+    "answers": [
+      {
+        "label": "Excellent, I was getting bored",
+        "scores": {
+          "uncertainty": 3,
+          "adventure": 2,
+          "pace": 1
+        }
+      },
+      {
+        "label": "Give me three minutes to rebuild the schedule",
+        "scores": {
+          "pace": 2,
+          "uncertainty": -1,
+          "urban": 1
+        }
+      },
+      {
+        "label": "Can the changed plan include lunch?",
+        "scores": {
+          "food": 2,
+          "pace": -1
+        }
+      },
+      {
+        "label": "I will go, but I reserve the right to sigh first",
+        "scores": {
+          "uncertainty": -2,
+          "climateCold": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Ton compagnon dit que le plan a complètement changé. Tu réponds :",
+        "answers": [
+          "Excellent, je commençais à m'ennuyer",
+          "Donne-moi trois minutes pour refaire le planning",
+          "Est-ce que le nouveau plan peut inclure le déjeuner ?",
+          "J'irai, mais je me réserve le droit de soupirer d'abord"
+        ]
+      },
+      "es": {
+        "prompt": "Tu compañero dice que el plan cambió por completo. Tú dices:",
+        "answers": [
+          "Excelente, ya me estaba aburriendo",
+          "Dame tres minutos para reconstruir el horario",
+          "¿El plan cambiado puede incluir almuerzo?",
+          "Iré, pero me reservo el derecho de suspirar primero"
+        ]
+      },
+      "pt": {
+        "prompt": "Seu companheiro diz que o plano mudou completamente. Você diz:",
+        "answers": [
+          "Excelente, eu estava ficando entediado",
+          "Me dê três minutos para refazer a agenda",
+          "O plano novo pode incluir almoço?",
+          "Eu vou, mas reservo o direito de suspirar primeiro"
+        ]
+      }
+    }
+  },
+  {
+    "id": "souvenir",
+    "prompt": "What souvenir are you bringing home?",
+    "answers": [
+      {
+        "label": "A recipe I will make everyone try",
+        "scores": {
+          "food": 3,
+          "cultureShift": 1
+        }
+      },
+      {
+        "label": "A weather story no one believes",
+        "scores": {
+          "adventure": 2,
+          "climateWarm": 1,
+          "climateCold": 1
+        }
+      },
+      {
+        "label": "A phrase book covered in heroic notes",
+        "scores": {
+          "language": 3,
+          "cultureShift": 1
+        }
+      },
+      {
+        "label": "A lifelong opinion about public transit",
+        "scores": {
+          "urban": 3,
+          "pace": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Quel souvenir rapportes-tu ?",
+        "answers": [
+          "Une recette que je forcerai tout le monde à essayer",
+          "Une histoire de météo que personne ne croira",
+          "Un guide de conversation couvert de notes héroïques",
+          "Une opinion durable sur les transports en commun"
+        ]
+      },
+      "es": {
+        "prompt": "¿Qué recuerdo llevas a casa?",
+        "answers": [
+          "Una receta que haré probar a todo el mundo",
+          "Una historia del clima que nadie creerá",
+          "Un libro de frases lleno de notas heroicas",
+          "Una opinión permanente sobre el transporte público"
+        ]
+      },
+      "pt": {
+        "prompt": "Que lembrança você leva para casa?",
+        "answers": [
+          "Uma receita que farei todo mundo experimentar",
+          "Uma história de clima em que ninguém vai acreditar",
+          "Um guia de frases coberto de anotações heroicas",
+          "Uma opinião para a vida toda sobre transporte público"
+        ]
+      }
+    }
+  },
+  {
+    "id": "packing",
+    "prompt": "Your suitcase has one last corner of space. What goes in?",
+    "answers": [
+      {
+        "label": "Extra socks, medicine, and the practical things everyone forgets",
+        "scores": {
+          "uncertainty": -2,
+          "pace": 1,
+          "rural": 1
+        }
+      },
+      {
+        "label": "A questionable amount of hot sauce and snacks",
+        "scores": {
+          "food": 3,
+          "climateWarm": 1,
+          "cultureShift": 1
+        }
+      },
+      {
+        "label": "A journal, photos, and something sentimental from home",
+        "scores": {
+          "cultureShift": -1,
+          "uncertainty": -1,
+          "pace": -1
+        }
+      },
+      {
+        "label": "Nothing. I trust future me and future me is nervous",
+        "scores": {
+          "uncertainty": 3,
+          "adventure": 2,
+          "language": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Il reste un dernier coin dans ta valise. Tu y mets quoi ?",
+        "answers": [
+          "Des chaussettes, des médicaments et les choses pratiques que tout le monde oublie",
+          "Une quantité discutable de sauce piquante et de snacks",
+          "Un journal, des photos et quelque chose de sentimental de la maison",
+          "Rien. Je fais confiance à mon futur moi, et il est déjà inquiet"
+        ]
+      },
+      "es": {
+        "prompt": "Queda un último espacio en tu maleta. ¿Qué pones ahí?",
+        "answers": [
+          "Calcetines extra, medicina y las cosas prácticas que todos olvidan",
+          "Una cantidad cuestionable de salsa picante y bocadillos",
+          "Un diario, fotos y algo sentimental de casa",
+          "Nada. Confío en mi yo del futuro, y mi yo del futuro está nervioso"
+        ]
+      },
+      "pt": {
+        "prompt": "Sobrou um cantinho na sua mala. O que vai ali?",
+        "answers": [
+          "Meias extras, remédios e as coisas práticas que todo mundo esquece",
+          "Uma quantidade questionável de molho apimentado e lanches",
+          "Um diário, fotos e algo sentimental de casa",
+          "Nada. Confio no meu eu do futuro, e ele está nervoso"
+        ]
+      }
+    }
+  },
+  {
+    "id": "teaching",
+    "prompt": "What is your lesson-planning personality?",
+    "answers": [
+      {
+        "label": "A clean outline, three scriptures, and no surprises",
+        "scores": {
+          "pace": 2,
+          "uncertainty": -2,
+          "urban": 1
+        }
+      },
+      {
+        "label": "A story, a drawing, and a bold question at the end",
+        "scores": {
+          "cultureShift": 2,
+          "language": 1,
+          "food": 1
+        }
+      },
+      {
+        "label": "Listen first, then build the whole lesson in the moment",
+        "scores": {
+          "uncertainty": 3,
+          "cultureShift": 2,
+          "rural": 1
+        }
+      },
+      {
+        "label": "High energy, high hope, and probably too many object lessons",
+        "scores": {
+          "pace": 3,
+          "adventure": 2,
+          "urban": 1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Quelle est ta personnalité de préparation de leçon ?",
+        "answers": [
+          "Un plan clair, trois Écritures et aucune surprise",
+          "Une histoire, un dessin et une question audacieuse à la fin",
+          "Écouter d'abord, puis construire toute la leçon sur le moment",
+          "Beaucoup d'énergie, beaucoup d'espoir et probablement trop de leçons de choses"
+        ]
+      },
+      "es": {
+        "prompt": "¿Cuál es tu personalidad al preparar una lección?",
+        "answers": [
+          "Un esquema claro, tres escrituras y ninguna sorpresa",
+          "Una historia, un dibujo y una pregunta audaz al final",
+          "Escuchar primero y luego armar toda la lección en el momento",
+          "Mucha energía, mucha esperanza y probablemente demasiadas lecciones objetivas"
+        ]
+      },
+      "pt": {
+        "prompt": "Qual é sua personalidade ao preparar uma lição?",
+        "answers": [
+          "Um esboço limpo, três escrituras e nenhuma surpresa",
+          "Uma história, um desenho e uma pergunta ousada no final",
+          "Ouvir primeiro e montar a lição inteira na hora",
+          "Muita energia, muita esperança e provavelmente objetos demais na lição"
+        ]
+      }
+    }
+  },
+  {
+    "id": "transfer",
+    "prompt": "Transfer calls are tonight. What are you secretly hoping for?",
+    "answers": [
+      {
+        "label": "A huge city where the map looks like spaghetti",
+        "scores": {
+          "urban": 4,
+          "pace": 2,
+          "uncertainty": 1
+        }
+      },
+      {
+        "label": "Somewhere remote enough that directions include landmarks",
+        "scores": {
+          "rural": 4,
+          "adventure": 2,
+          "pace": -1
+        }
+      },
+      {
+        "label": "A new language challenge that will humble me immediately",
+        "scores": {
+          "language": 4,
+          "cultureShift": 2,
+          "uncertainty": 2
+        }
+      },
+      {
+        "label": "A familiar rhythm where I can get really good at the work",
+        "scores": {
+          "uncertainty": -3,
+          "pace": 1,
+          "cultureShift": -1
+        }
+      }
+    ],
+    "i18n": {
+      "fr": {
+        "prompt": "Les appels de transfert sont ce soir. Qu'espères-tu secrètement ?",
+        "answers": [
+          "Une immense ville où la carte ressemble à des spaghettis",
+          "Un endroit assez isolé pour que les directions utilisent des repères",
+          "Un nouveau défi linguistique qui va m'humilier immédiatement",
+          "Un rythme familier où je peux vraiment devenir bon dans le travail"
+        ]
+      },
+      "es": {
+        "prompt": "Las llamadas de traslado son esta noche. ¿Qué esperas en secreto?",
+        "answers": [
+          "Una ciudad enorme donde el mapa parece espagueti",
+          "Un lugar tan remoto que las direcciones usan puntos de referencia",
+          "Un nuevo desafío de idioma que me humille de inmediato",
+          "Un ritmo familiar donde pueda volverme realmente bueno en la obra"
+        ]
+      },
+      "pt": {
+        "prompt": "As ligações de transferência são hoje à noite. O que você espera em segredo?",
+        "answers": [
+          "Uma cidade enorme onde o mapa parece espaguete",
+          "Um lugar remoto o bastante para as direções usarem pontos de referência",
+          "Um novo desafio de idioma que vai me humilhar imediatamente",
+          "Um ritmo familiar onde eu possa ficar realmente bom no trabalho"
+        ]
+      }
+    }
+  }
+]
