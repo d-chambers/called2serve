@@ -1,59 +1,28 @@
 # Called2Serve
 
-A playful, unofficial LDS mission personality quiz built as a static GitHub
-Pages site.
-
-## Live site
-
-The quiz will be hosted on GitHub Pages at:
+![QR code for Called2Serve](assets/qr-code.png)
 
 <https://d-chambers.github.io/called2serve/>
 
-![QR code for Called2Serve](assets/qr-code.png)
+Called2Serve is a playful, unofficial Latter-day Saint mission personality quiz.
+Answer a handful of lighthearted questions and get matched with a mission from
+the quiz's mission list.
 
-## Local development
+Your result includes a mission name, a photo, a few quick details, and links to
+learn more about the place and the Church there. It is meant for fun, sharing,
+and youth activity energy, not for predicting or simulating an actual mission
+call.
 
-Serve the directory with any static file server:
+## What to Expect
 
-```sh
-python3 -m http.server 8000
-```
+- A quick quiz with unserious personality-style questions.
+- A mission result based on broad traits like climate, language, pace, and sense
+  of adventure.
+- A shareable result link.
+- A QR code you can print, project, or share so people can open the quiz quickly.
 
-Then open `http://localhost:8000`.
+## Disclaimer
 
-## Mission data
-
-Mission data is committed in `data/missions.json`. To regenerate it from the
-current seed source:
-
-```sh
-node scripts/build-missions.mjs
-```
-
-The importer currently uses the public 2026 list at Mission Call and applies
-coarse metadata rules for quiz scoring. The committed data currently contains
-504 missions. The Church Newsroom says 55 new missions become effective
-July 1, 2026, bringing the expected total to 506; the importer prints a warning
-whenever the seed source produces a count other than 506 so the JSON can be
-manually curated.
-
-Each mission record also includes `churchCountry`, `churchWebsiteUrl`,
-`wikipediaTitle`, `wikipediaUrl`, and `photoUrl`. Regenerate the Wikipedia/photo
-fields with:
-
-```sh
-node scripts/enrich-missions-wikipedia.mjs
-```
-
-The enrichment script uses Wikipedia page summaries and commits links only; the
-site does not embed remote images. `churchWebsiteUrl` points to an official Church
-country/facts page when available, otherwise to an official Church search URL for
-the mission name.
-
-## GitHub Pages
-
-This project has no build step. The `Deploy GitHub Pages` workflow publishes the
-static site on pushes to `main` and can also be run manually from GitHub Actions.
-
-In the repository settings, configure GitHub Pages to use **GitHub Actions** as
-the source.
+This project is unofficial and is not affiliated with or endorsed by The Church
+of Jesus Christ of Latter-day Saints. Real mission calls come through the
+Church's official process.
