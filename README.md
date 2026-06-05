@@ -4,6 +4,8 @@
 
 <https://d-chambers.github.io/called2serve/>
 
+Ever seen the missionaries from the church of Jesus Christ of Latter Day Saints (AKA Mormons) and thought, what if I did that? Where would I go? 
+
 Called2Serve is a playful, unofficial Latter-day Saint mission personality quiz.
 Answer a handful of lighthearted questions and get matched with a mission from
 the quiz's mission list.
