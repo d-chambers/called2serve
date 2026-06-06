@@ -21,7 +21,7 @@ const state = {
   answers: [],
   answerIndexes: [],
   index: 0,
-  locale: localStorage.getItem("called2serve.locale") || "en",
+  locale: getInitialLocale(),
   renderedMission: null,
   renderedProfile: null,
 };
@@ -81,6 +81,134 @@ function setupLanguageSelect() {
     applyStaticTranslations();
     rerenderCurrentView();
   });
+}
+
+function getInitialLocale() {
+  const savedLocale = localStorage.getItem("called2serve.locale");
+  if (LOCALES[savedLocale]) {
+    return savedLocale;
+  }
+
+  return detectLocaleFromBrowser() ?? "en";
+}
+
+function detectLocaleFromBrowser() {
+  const languageHints = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const languages = languageHints.filter(Boolean);
+
+  for (const language of languages) {
+    const locale = localeFromLanguageRegion(language);
+    if (locale) {
+      return locale;
+    }
+  }
+
+  const timeZoneLocale = localeFromTimeZone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  if (timeZoneLocale) {
+    return timeZoneLocale;
+  }
+
+  for (const language of languages) {
+    const locale = localeFromLanguageCode(language);
+    if (locale) {
+      return locale;
+    }
+  }
+
+  return null;
+}
+
+function localeFromLanguageRegion(language) {
+  try {
+    return localeFromRegion(new Intl.Locale(language).region);
+  } catch {
+    return null;
+  }
+}
+
+function localeFromLanguageCode(language) {
+  try {
+    const locale = new Intl.Locale(language);
+    return LOCALES[locale.language] ? locale.language : null;
+  } catch {
+    const languageCode = language.toLowerCase().split("-")[0];
+    return LOCALES[languageCode] ? languageCode : null;
+  }
+}
+
+function localeFromRegion(region) {
+  const regionLocales = {
+    AD: "es",
+    AR: "es",
+    BO: "es",
+    BR: "pt",
+    BZ: "es",
+    CL: "es",
+    CO: "es",
+    CR: "es",
+    CU: "es",
+    DO: "es",
+    EC: "es",
+    ES: "es",
+    FR: "fr",
+    GF: "fr",
+    GP: "fr",
+    GQ: "es",
+    GT: "es",
+    HN: "es",
+    HT: "fr",
+    MF: "fr",
+    MQ: "fr",
+    MX: "es",
+    NI: "es",
+    PA: "es",
+    PE: "es",
+    PF: "fr",
+    PM: "fr",
+    PR: "es",
+    PT: "pt",
+    PY: "es",
+    RE: "fr",
+    SV: "es",
+    UY: "es",
+    VE: "es",
+    YT: "fr",
+  };
+  return regionLocales[region?.toUpperCase()] ?? null;
+}
+
+function localeFromTimeZone(timeZone) {
+  if (!timeZone) {
+    return null;
+  }
+
+  if (timeZone === "Europe/Paris") return "fr";
+  if (timeZone === "Europe/Madrid") return "es";
+  if (timeZone === "Europe/Lisbon") return "pt";
+  if (timeZone.startsWith("America/Argentina/")) return "es";
+  if (timeZone.startsWith("America/Brazil/")) return "pt";
+  if (timeZone.startsWith("America/Mexico_")) return "es";
+
+  const timeZoneLocales = {
+    "America/Bogota": "es",
+    "America/Caracas": "es",
+    "America/Costa_Rica": "es",
+    "America/El_Salvador": "es",
+    "America/Guatemala": "es",
+    "America/Guayaquil": "es",
+    "America/Havana": "es",
+    "America/Lima": "es",
+    "America/Managua": "es",
+    "America/Montevideo": "es",
+    "America/Panama": "es",
+    "America/Puerto_Rico": "es",
+    "America/Santiago": "es",
+    "America/Santo_Domingo": "es",
+    "America/Sao_Paulo": "pt",
+    "America/Tegucigalpa": "es",
+    "Atlantic/Azores": "pt",
+  };
+  return timeZoneLocales[timeZone] ?? null;
 }
 
 function applyStaticTranslations() {

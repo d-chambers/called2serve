@@ -4,7 +4,7 @@
     "prompt": "Your district has one free P-day. What are you doing?",
     "answers": [
       {
-        "label": "Trying every street food stand within walking distance",
+        "label": "Trying something from every street food stand within walking distance",
         "scores": {
           "food": 3,
           "cultureShift": 2,
@@ -28,7 +28,7 @@
         }
       },
       {
-        "label": "Laundry, letters, and being asleep before 9:30",
+        "label": "Doing laundry, writing letters, and being asleep before 9:30",
         "scores": {
           "pace": -2,
           "uncertainty": -1,
@@ -40,10 +40,10 @@
       "fr": {
         "prompt": "Ton district a un P-day libre. Que fais-tu ?",
         "answers": [
-          "Essayer tous les stands de street food à distance de marche",
+          "Essayer quelque chose dans chaque stand de cuisine de rue à distance de marche",
           "Faire une randonnée quelque part avec peu de réseau",
           "Un musée, une boulangerie et un trajet en train très efficace",
-          "Lessive, lettres et au lit avant 21 h 30"
+          "Faire la lessive, écrire des lettres et être au lit avant 21 h 30"
         ]
       },
       "es": {
@@ -71,7 +71,7 @@
     "prompt": "Pick your ideal tracting weather.",
     "answers": [
       {
-        "label": "Hot enough that the sidewalk is personally testing me",
+        "label": "Hot enough that the sidewalk feels like a personal trial",
         "scores": {
           "climateWarm": 4,
           "adventure": 1
@@ -105,7 +105,7 @@
       "fr": {
         "prompt": "Choisis ta météo idéale pour faire du contact.",
         "answers": [
-          "Assez chaud pour que le trottoir me mette personnellement à l'épreuve",
+          "Assez chaud pour que le trottoir ressemble à une épreuve personnelle",
           "Assez froid pour que mon manteau devienne mon identité",
           "Pluvieux, vert et dramatique",
           "Doux. Je suis venu servir, pas devenir imperméable à la météo"
@@ -114,7 +114,7 @@
       "es": {
         "prompt": "Elige tu clima ideal para tocar puertas.",
         "answers": [
-          "Tan caluroso que la acera me pone a prueba personalmente",
+          "Tan caluroso que la acera parece una prueba personal",
           "Tan frío que mi abrigo se vuelve parte de mi identidad",
           "Lluvioso, verde y dramático",
           "Templado. Vine a servir, no a volverme resistente al clima"
@@ -123,7 +123,7 @@
       "pt": {
         "prompt": "Escolha o clima ideal para bater portas.",
         "answers": [
-          "Quente o bastante para a calçada me testar pessoalmente",
+          "Quente o bastante para a calçada parecer uma provação pessoal",
           "Frio o bastante para meu casaco virar parte da minha identidade",
           "Chuvoso, verde e dramático",
           "Ameno. Vim para servir, não para virar à prova de clima"
@@ -226,7 +226,7 @@
         }
       },
       {
-        "label": "I brought snacks and I trust no schedule",
+        "label": "I brought snacks because I trust no schedule",
         "scores": {
           "uncertainty": 1,
           "pace": 1
@@ -235,12 +235,12 @@
     ],
     "i18n": {
       "fr": {
-        "prompt": "Une famille membre te demande ce que tu veux pour dîner.",
+        "prompt": "Une famille de membres te demande ce que tu veux pour dîner.",
         "answers": [
           "Ce qu'il y a de plus local, même si je ne peux pas encore l'identifier",
           "Quelque chose d'assez épicé pour fortifier mon témoignage",
           "Un gratin avec un nom familier",
-          "J'ai apporté des snacks et je ne fais confiance à aucun horaire"
+          "J'ai apporté des snacks parce que je ne fais confiance à aucun horaire"
         ]
       },
       "es": {
@@ -249,7 +249,7 @@
           "Lo más local, aunque todavía no pueda identificarlo",
           "Algo suficientemente picante para fortalecer mi testimonio",
           "Una cazuela con un nombre familiar",
-          "Traje bocadillos y no confío en ningún horario"
+          "Traje bocadillos porque no confío en ningún horario"
         ]
       },
       "pt": {
@@ -258,7 +258,7 @@
           "O que for mais local, mesmo que eu ainda não saiba identificar",
           "Algo picante o bastante para fortalecer meu testemunho",
           "Uma caçarola com um nome familiar",
-          "Trouxe lanches e não confio em nenhum horário"
+          "Trouxe lanches porque não confio em nenhum horário"
         ]
       }
     }
@@ -350,7 +350,7 @@
         }
       },
       {
-        "label": "Can the changed plan include lunch?",
+        "label": "Can the new plan include lunch?",
         "scores": {
           "food": 2,
           "pace": -1
@@ -379,7 +379,7 @@
         "answers": [
           "Excelente, ya me estaba aburriendo",
           "Dame tres minutos para reconstruir el horario",
-          "¿El plan cambiado puede incluir almuerzo?",
+          "¿El nuevo plan puede incluir almuerzo?",
           "Iré, pero me reservo el derecho de suspirar primero"
         ]
       },
@@ -487,7 +487,7 @@
         }
       },
       {
-        "label": "Nothing. I trust future me and future me is nervous",
+        "label": "Nothing. I trust future me, which worries present me",
         "scores": {
           "uncertainty": 3,
           "adventure": 2,
@@ -502,7 +502,7 @@
           "Des chaussettes, des médicaments et les choses pratiques que tout le monde oublie",
           "Une quantité discutable de sauce piquante et de snacks",
           "Un journal, des photos et quelque chose de sentimental de la maison",
-          "Rien. Je fais confiance à mon futur moi, et il est déjà inquiet"
+          "Rien. Je fais confiance à mon futur moi, ce qui inquiète mon moi actuel"
         ]
       },
       "es": {
@@ -511,7 +511,7 @@
           "Calcetines extra, medicina y las cosas prácticas que todos olvidan",
           "Una cantidad cuestionable de salsa picante y bocadillos",
           "Un diario, fotos y algo sentimental de casa",
-          "Nada. Confío en mi yo del futuro, y mi yo del futuro está nervioso"
+          "Nada. Confío en mi yo del futuro, y eso preocupa a mi yo del presente"
         ]
       },
       "pt": {
@@ -520,7 +520,7 @@
           "Meias extras, remédios e as coisas práticas que todo mundo esquece",
           "Uma quantidade questionável de molho apimentado e lanches",
           "Um diário, fotos e algo sentimental de casa",
-          "Nada. Confio no meu eu do futuro, e ele está nervoso"
+          "Nada. Confio no meu eu do futuro, o que preocupa meu eu de agora"
         ]
       }
     }
@@ -569,7 +569,7 @@
           "Un plan clair, trois Écritures et aucune surprise",
           "Une histoire, un dessin et une question audacieuse à la fin",
           "Écouter d'abord, puis construire toute la leçon sur le moment",
-          "Beaucoup d'énergie, beaucoup d'espoir et probablement trop de leçons de choses"
+          "Beaucoup d'énergie, beaucoup d'espoir et probablement trop de démonstrations avec objets"
         ]
       },
       "es": {
@@ -587,7 +587,7 @@
           "Um esboço limpo, três escrituras e nenhuma surpresa",
           "Uma história, um desenho e uma pergunta ousada no final",
           "Ouvir primeiro e montar a lição inteira na hora",
-          "Muita energia, muita esperança e provavelmente objetos demais na lição"
+          "Muita energia, muita esperança e provavelmente lições com objetos demais"
         ]
       }
     }
@@ -621,7 +621,7 @@
         }
       },
       {
-        "label": "A familiar rhythm where I can get really good at the work",
+        "label": "A familiar rhythm where I can settle in and get good at the work",
         "scores": {
           "uncertainty": -3,
           "pace": 1,
@@ -635,8 +635,8 @@
         "answers": [
           "Une immense ville où la carte ressemble à des spaghettis",
           "Un endroit assez isolé pour que les directions utilisent des repères",
-          "Un nouveau défi linguistique qui va m'humilier immédiatement",
-          "Un rythme familier où je peux vraiment devenir bon dans le travail"
+          "Un nouveau défi linguistique qui va me remettre à ma place immédiatement",
+          "Un rythme familier où je peux m’installer et vraiment progresser dans le travail"
         ]
       },
       "es": {
@@ -644,8 +644,8 @@
         "answers": [
           "Una ciudad enorme donde el mapa parece espagueti",
           "Un lugar tan remoto que las direcciones usan puntos de referencia",
-          "Un nuevo desafío de idioma que me humille de inmediato",
-          "Un ritmo familiar donde pueda volverme realmente bueno en la obra"
+          "Un nuevo desafío de idioma que me haga sentir humilde de inmediato",
+          "Un ritmo familiar donde pueda adaptarme y mejorar de verdad en la obra"
         ]
       },
       "pt": {
@@ -653,8 +653,8 @@
         "answers": [
           "Uma cidade enorme onde o mapa parece espaguete",
           "Um lugar remoto o bastante para as direções usarem pontos de referência",
-          "Um novo desafio de idioma que vai me humilhar imediatamente",
-          "Um ritmo familiar onde eu possa ficar realmente bom no trabalho"
+          "Um novo desafio de idioma que vai me deixar humilde na hora",
+          "Um ritmo familiar onde eu possa me adaptar e melhorar de verdade no trabalho"
         ]
       }
     }
